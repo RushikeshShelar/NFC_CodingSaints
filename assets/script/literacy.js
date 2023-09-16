@@ -1,4 +1,4 @@
-const API_KEY = "356ae5ced0c4427f93654e6668ca0323";
+const API_KEY = "9a595a7508f74e1ebe74953145dac561";
 const url = "https://newsapi.org/v2/everything?q=";
 
 window.addEventListener("load", () => fetchNews("Financial literacy"));
