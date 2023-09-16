@@ -1,0 +1,49 @@
+<% layout('/layouts/boilerplate') %>
+    <div class="wrap">
+        <h4>Welcome to the</h4>
+        <h1>Financial Uplift Community</h1>
+        <p>Where you can share your financial journey with others</p>
+    </div>
+
+    <div class="container">
+
+        <div class="row height d-flex justify-content-center align-items-center">
+
+          <div class="col-md-6">
+
+            <div class="search">
+              <i class="fa fa-search"></i>
+              <input type="text" class="form-control" placeholder="">
+              <button class="btn btn-primary">Search</button>
+            </div>
+            
+          </div>
+          
+        </div>
+    </div>
+    <div class="wrap">
+      <div class="container">
+        Have a question? <br>
+        <a href="new"><span class="btn btn-dark">Ask Now</span></a>
+      </div>
+    </div>
+    
+    <div>
+        <% for(let post of posts){ %>
+            <div class="item">
+                <h2 class="P-0">
+                    <%= post.title %>
+                </h2>
+                <p class="P-0">
+                    <%= post.desc %>
+                </p >
+                <p class="P-0">
+                    <%= post.author %> | <span>
+                        <%= post.time %>
+                    </span>
+                </p>
+                </li>
+                <button class="btn btn-info">Reply</button>
+            </div>
+            <% } %>
+    </div>

@@ -1,0 +1,59 @@
+<% layout('layouts/boilerplate')%>
+<div class="container-box">
+<div class="row">
+        <h1 class="text-center heading">New Community Post</h1>
+        <div class="col-6 offset-3">
+            <form action="/posts" method="POST" class="validated-form" novalidate>
+                <div class="mb-3">
+                    <label class="form-label" for="title">Title</label>
+                    <input class="form-control" type="text" id="title" name="post[title]" required>
+                    <div class="valid-feedback">
+                        Looks Good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please enter a title.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="description">description</label>
+                    <input class="form-control" type="text" id="description" name="post[description]" required>
+                    <div class="valid-feedback">
+                        Looks Good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please enter a valid description.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="image">Username</label>
+                    <input class="form-control" type="text" id="image" name="post[author]" required>
+                    <div class="valid-feedback">
+                        Looks Good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please provid a valid Username.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="price">Date</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="price" placeholder="xx/mm/yyyy" aria-label="price"
+                            aria-describedby="price-label" name="post[time]" required>
+                            <div class="valid-feedback">
+                                Looks Good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter an appropriate price.
+                            </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <button class="btn btn-success" type="submit">Add post</button>
+                    <a href="/posts" class="btn btn-info">All posts</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
