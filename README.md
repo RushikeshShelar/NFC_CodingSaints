@@ -1,6 +1,9 @@
 # NFC_CodingSaints
-Need For Code 2.0 Hackathon Repository. 
+
+Need For Code 2.0 Hackathon Repository.
+
 Domain - Social Cause 
+
 Problem Statement - Finanncial Literacy
 ## Common setup
 
@@ -17,7 +20,7 @@ npm install
 ```bash
 node app.js
 ```
-Then Open the index.html File
+Then Open the ```index.html``` File using Live Server
 ## Author
 Coding Saints
 - Rushikesh Shelar
