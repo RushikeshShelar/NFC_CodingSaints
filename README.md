@@ -26,4 +26,4 @@ Coding Saints
 - Rushikesh Shelar
 - Sumit Chauhan
 - Shubham Jankar
-- Oravin Rajnale
+- Pravin Rajnale
